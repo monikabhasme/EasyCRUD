@@ -8,7 +8,7 @@ RUN rm -f /src/main/resources/application.properties && \
     cp -f application.properties src/main/resources/application.properties && \
     mvn clean package -DskipTests
 
-WORKDIR /target
+WORKDIR target/
 
 EXPOSE 8080
 
